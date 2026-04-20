@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1 id="title">SURVEY FORM</h1>
+
+<p id="description">
+Your feedback is valuable to us. Kindly fill out this survey to help us serve you better.
+</p>
+
+<form id="survey-form">
+
+<fieldset>
+<label id="name-label">
+Enter your name:
+<input type="text" id="name" name="Name" placeholder="Enter your name" required>
+</label>
+
+<label id="email-label">
+Enter your email:
+<input type="email" id="email" name="Email" placeholder="Enter your Email" required>
+</label>
+
+<label id="number-label">
+Enter your age:
+<input type="number" id="number" name="Number" placeholder="Enter your number" min="1" max="100">
+</label>
+</fieldset>
+
+<fieldset>
+<legend>How did you hear about us?</legend>
+<select id="dropdown">
+<option value="">Choose one</option>
+<option value="social">Social Media</option>
+<option value="friend">Friend</option>
+<option value="ad">Advertisement</option>
+</select>
+</fieldset>
+
+<fieldset>
+<legend>Would you recommend our service?</legend>
+
+<label>
+<input type="radio" name="recommend" value="yes"> YES
+</label>
+
+<label>
+<input type="radio" name="recommend" value="no"> NO
+</label>
+
+</fieldset>
+
+<fieldset id="checkbox-group">
+<legend>What did you like about our service?</legend>
+
+<label><input type="checkbox" value="quality"> Quality</label>
+<label><input type="checkbox" value="price"> Price</label>
+<label><input type="checkbox" value="support"> Customer support</label>
+<label><input type="checkbox" value="delivery"> Fast delivery</label>
+
+</fieldset>
+
+<fieldset>
+<p>Any additional comments?</p>
+<textarea placeholder="Any comments?"></textarea>
+</fieldset>
+
+<fieldset>
+<input type="submit" id="submit">
+</fieldset>
+
+</form>
+
+</body>
+</html>
